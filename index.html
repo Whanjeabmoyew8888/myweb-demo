@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToonWorld - Read Comics & Webtoons</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo">
+            <div class="logo-icon">WEBTOON</div>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="index.html">Originals</a></li>
+            <li><a href="#">Genres</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="about.html" class="canvas-link">Canvas</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <button class="btn-creators">📚 Creators 101</button>
+          <button class="btn-publish">Publish</button>
+          <button class="btn-login">Log In</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="genre-nav">
+      <div class="nav-container">
+        <button class="genre-btn active">HOME</button>
+        <button class="genre-btn">ALL</button>
+        <button class="genre-btn">COMEDY</button>
+        <button class="genre-btn">FANTASY</button>
+        <button class="genre-btn">ROMANCE</button>
+        <button class="genre-btn">SLICE OF LIFE</button>
+        <button class="genre-btn">SCI-FI</button>
+        <button class="genre-btn">DRAMA</button>
+        <button class="genre-btn">ACTION</button>
+        <button class="genre-btn">SUPERHERO</button>
+        <button class="genre-btn">OTHERS ▼</button>
+      </div>
+    </div>
+
+    <section class="hero-carousel">
+      <button class="carousel-btn prev" id="heroPrev">‹</button>
+      <button class="carousel-btn next" id="heroNext">›</button>
+      <div class="hero-slides" id="heroSlides">
+        <div
+          class="hero-slide active"
+          style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)"
+        >
+          <div class="hero-content">
+            <h1>Discover Amazing Stories</h1>
+            <p>Explore thousands of original comics and webtoons</p>
+            <button class="hero-cta">Start Reading</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="heroDots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <section class="recommended-section">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>RECOMMENDED SERIES</h2>
+          <div class="carousel-dots" id="recDots">
+            <span class="dot"></span>
+            <span class="dot active"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+        <div class="carousel-wrapper">
+          <button class="carousel-btn prev" id="recPrev">‹</button>
+          <div class="webtoon-carousel" id="webtoonCarousel">
+            <!-- Cards will be loaded by JavaScript -->
+          </div>
+          <button class="carousel-btn next" id="recNext">›</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="weekly-hot">
+      <div class="section-container">
+        <h2 class="section-title">Weekly HOT</h2>
+        <div class="hot-grid" id="hotGrid">
+          <!-- Hot series will be loaded by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <p>&copy; 2025 ToonWorld. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy Policy</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
