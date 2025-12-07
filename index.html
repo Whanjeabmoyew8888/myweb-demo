@@ -1,114 +1,258 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToonWorld - Read Comics & Webtoons</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>วิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="https://i0.wp.com/www.atc.ac.th/wp-content/uploads/2019/03/logo_atc.png" type="image/png">
+
   </head>
+
   <body>
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="nav-left">
-          <div class="logo">
-            <div class="logo-icon">WEBTOON</div>
-          </div>
-          <ul class="nav-menu">
-            <li><a href="index.html">Originals</a></li>
-            <li><a href="#">Genres</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="about.html" class="canvas-link">Canvas</a></li>
+    <!-- Popup Overlay -->
+<div id="popup-overlay">
+  <div id="popup-box">
+    <span id="popup-close">&times;</span>
+
+    <img src="queen.jpeg" class="popup-full-img" alt="popup">
+  </div>
+</div>
+    <!-- Header -->
+    <header>
+      <div class="topbar">
+        <a href="index.html">
+        <img src="cropped-logo_atc (1).png" alt="โลโก้" class="logo" />
+      </a>
+      <div class="site-title">
+        <h1>วิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ</h1>
+      </div>
+
+        <nav id="navbar">
+          <ul class="menu">
+            <li class="has-dropdown">
+              <a href="#">บริการออนไลน์ ▾</a>
+              <ul class="dropdown">
+               <li class="has-sub">
+            <a href="#">ไฟล์ดาวน์โหลด ▸</a>
+            <ul class="sub-dropdown">
+          <a href="https://bit.ly/3MASlGx" target="_blank" rel="noopener noreferrer">LOGO</a>
+          <a href="https://www.atc.ac.th/FileATC/%E0%B8%AA%E0%B8%B3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2/%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%A8%E0%B8%B6%E0%B8%81%E0%B8%A9%E0%B8%B2%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B8%B2%E0%B8%A5%E0%B8%B1%E0%B8%A2%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%AD%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B9%8C%E0%B8%9E%E0%B8%93%E0%B8%B4%E0%B8%8A%E0%B8%A2%E0%B8%81%E0%B8%B2%E0%B8%A3%202566.pdf" target="_blank" rel="noopener noreferrer">คู่มือนักศึกษา</a>
+          <li><a href="calendar.html">ปฏิทินการเรียนศึกษา</a></li>
+        <li><a href="elerning.html">สื่อการเรียนการสอน</a></li>
+ 
+      </ul>
+    </li>
+                <li><a href="estudio.html">ระบบจองใช้ห้อง STUDIO</a></li>
+                <li><a href="efix.html">ระบบแจ้งซ่อม Online</a></li>
+                <li><a href="epassrequest.html">แจ้งขอรหัสผ่าน Internet / ระบบ SISA</a></li>
+                <li><a href="esisaatc.html">ระบบ Sisa School</a></li>
+                <li><a href="loan.html">กองทุนกู้ยืม</a></li>
+                <li><a href="http://webmail.atc.ac.th/true/">ATC. E-Mail</a></li>
+                <li><a href="http://plag.grad.chula.ac.th/">อักขรวิสุทธิ์</a></li>
+              </ul>
+            </li>
+
+            <li class="has-dropdown">
+  <a href="#">เกี่ยวกับวิทยาลัย ▾</a>
+  <ul class="dropdown">
+    <li><a href="EHISTORY.html">ประวัติ</a></li>
+    <li><a href="CEO.html">ทำเนียบผู้บริหาร</a></li>
+    <li><a href="departmentleader.html">หัวหน้า / สำนักงาน / ระดับ / สาขา</a></li>
+    <li><a href="arc.html">อัตลักษณ์</a></li>
+    <li><a href="loan.html">ทุนช่วยเหลือนักเรียน</a></li>
+
+    <!-- ข้อมูลสถาบัน เป็น submenu -->
+    <li class="has-sub">
+      <a href="#">ข้อมูลสถาบัน ▸</a>
+      <ul class="sub-dropdown">
+        <li><a href="view.html">วิสัยทัศน์ในวิทยาลัย</a></li>
+        <li><a href="seacure.html">ความปลอดภัยในวิทยาลัย</a></li>
+      </ul>
+    </li>
+
+    <li><a href="video.html">วิดีโอแนะนำวิทยาลัย</a></li>
+    <li><a href="https://www.atc.ac.th/wp-content/uploads/2019/10/%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%AD%E0%B8%A3%E0%B8%A3%E0%B8%96%E0%B8%A7%E0%B8%B4%E0%B8%97%E0%B8%A2%E0%B9%8C-%E0%B9%80%E0%B8%81%E0%B9%88%E0%B8%B2.mp3">เพลงมาร์ชวิทยาลัย</a></li>
+    <li><a href="clothes.html">การแต่งกาย</a></li>
+  </ul>
+</li>
+
+
+            <!-- สำนักสาขา -->
+            <li class="has-dropdown">
+            <a href="#">สำนักสาขา ▾</a>
+
+            <ul class="dropdown">
+
+            <!-- สำนัก -->
+            <li class="has-sub">
+            <a href="#">สำนัก ▸</a>
+            <ul class="sub-dropdown">
+          <li><a href="wichakarn.html">สำนักวิชาการ</a></li>
+          <li><a href="leka.html">สำนักเลขานุกาs</a></li>
+        <li><a href="pr.html">สำนักประชาสัมพันธ์และการตลาด</a></li>
+        <li><a href="HR.html">สำนักงานบุคคล</a></li>
+        <li><a href="acc.html">สำนักทะเบียนและวัดผล</a></li>
+        <li><a href="studebt.html">สำนักกิจการนักศึกษา</a></li>
+        <li><a href="insurance.html">สำนักประกันคุณภาพ</a></li>
+        <li><a href="chest.html">สำนักการคลัง</a></li>
+        <li><a href="evo.html">ฝ่ายวางแผนและพัฒนา</a></li>
+        <li><a href="special.html">สำนักกิจการพิเศษ</a></li>
+        <li><a href="sod.html">สำนักบริการ</a></li>
+      </ul>
+    </li>
+
+    <!-- สาขา -->
+    <li class="has-sub">
+      <a href="#">สาขา ▸</a>
+      <ul class="sub-dropdown">
+<li><a href="IT.html">สาขาวิชาเทคโนโลยีสารสนเทศ</a></li>
+    <li><a href="DM.html">สาขาวิชาการตลาดดิจิทัล</a></li>
+    <li><a href="DA.html">สาขาวิชาดิจิทัลกราฟิก</a></li>
+    <li><a href="BD.html">สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล</a></li>
+    <li><a href="BUNCHEE.html">สาขาวิชาการบัญชี</a></li>
+    <li><a href="LGT.html">สาขาวิชาการจัดการโลจิสติกส์และซัพพลายเชน</a></li>
+    <li><a href="OFFICE.html">สาขาวิชาปฏิบัติสำนักงาน</a></li>
+    <li><a href="USUALLL.html">สาขาวิชาพื้นฐานทั่วไป</a></li>
+    <li><a href="PASA.html">สาขาวิชาภาษาต่างประเทศธุรกิจ</a></li>
+    <li><a href="HOTEL.html">สาขาวิชาการโรงแรม</a></li>
+      </ul>
+    </li>
+
+    <!-- ศูนย์ -->
+    <li class="has-sub">
+      <a href="#">ศูนย์ ▸</a>
+      <ul class="sub-dropdown">
+                <li><a href="AITSEC.html">ศูนย์เทคโนโลยีสารสนเทศ (AITSEC)</a></li>
+                <li><a href="DURIYANG.html">ศูนย์ดุริยางคศิลป์</a></li>
+                <li><a href="LAB.html">ศูนย์วิจัย</a></li>
+                <li><a href="THAIART.html">ศูนย์ศิลปวัฒนธรรมไทย</a></li>
+                <li><a href="LIB.html">ศูนย์ห้องสมุด</a></li>
+                <li><a href="WORK.html">ศูนย์แนะแนวและจัดหางาน</a></li>
+                <li><a href="CHEER.html">ชมรมเชียร์ลีดเดอร์</a></li>
+                <li><a href="estudio.html">A.E.T (ATC Education Technology)</a></li>
+      </ul>
+    </li>
+
+  </ul>
+</li>
+             <!-- หลักสูตรการศึกษา  -->
+            <li class="has-dropdown">
+              <a href="#">หลักสูตรการศึกษา ▾</a>
+              <ul class="dropdown">
+                <li><a href="PWC.html">ปวช.</a></li>
+                <li><a href="PWS.html">ปวส.</a></li>
+              </ul>
+            </li>
+
+             <!-- ติดต่อ -->
+            <li class="has-dropdown">
+              <a href="#">ติดต่อ ▾</a>
+              <ul class="dropdown">
+                <li><a href="JOB.html">รับสมัครงานครู/อาจารย์</a></li>
+                <li><a href="contact.html">ติดต่อวิทลัย</a></li>
+                <li><a href="SMAK.html">สมัครเรียนออนไลน์</a></li>
+                <li><a href="#">cookieright by atc</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">SITEMAP</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hamburger สำหรับ Mobile -->
+        <div class="hamburger" id="hamburger">&#9776;</div>
+
+        <a href="ย.html" class="btn-online">สมัครเรียนออนไลน์</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>เปิดรับสมัคร<br /><span>นักศึกษาใหม่</span></h1>
+
+        <div class="contact">
+          <p>สอบถามเพิ่มเติม: 0-2744-8450-5 ต่อ 101-105</p>
+          <a href="ย.html" class="btn-register">สมัครเลย</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <!-- Column 1 -->
+        <div class="footer-col">
+          <img
+            src="cropped-logo_atc (1).png"
+            class="footer-logo"
+            alt="โลโก้วิทยาลัย"
+          />
+
+          <h3>วิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ</h3>
+          <p>Attawit Commercial Technology College</p>
+
+          <p>
+            280 ถ.สุวินทวงศ์ แขวงบางบอน<br />
+            เขตบางบอน กรุงเทพมหานคร 10260
+          </p>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-col">
+          <h4>ข้อมูลหลักสูตร</h4>
+          <ul>
+            <li><a href="#">ระดับ ปวช.</a></li>
+            <li><a href="#">ระดับ ปวส.</a></li>
+          </ul>
+
+          <h4>บริการข้อมูลสารสนเทศ</h4>
+          <ul>
+            <li><a href="#">ระบบรับสมัคร Online</a></li>
+            <li><a href="#">แบบฟอร์มเอกสารสำหรับนักเรียน</a></li>
+            <li><a href="#">ระบบ Sisa School</a></li>
+            <li><a href="#">ATC E-Mail</a></li>
+            <li><a href="#">วิชาการวิทยาลัย</a></li>
           </ul>
         </div>
-        <div class="nav-right">
-          <button class="btn-creators">📚 Creators 101</button>
-          <button class="btn-publish">Publish</button>
-          <button class="btn-login">Log In</button>
-        </div>
-      </div>
-    </nav>
 
-    <div class="genre-nav">
-      <div class="nav-container">
-        <button class="genre-btn active">HOME</button>
-        <button class="genre-btn">ALL</button>
-        <button class="genre-btn">COMEDY</button>
-        <button class="genre-btn">FANTASY</button>
-        <button class="genre-btn">ROMANCE</button>
-        <button class="genre-btn">SLICE OF LIFE</button>
-        <button class="genre-btn">SCI-FI</button>
-        <button class="genre-btn">DRAMA</button>
-        <button class="genre-btn">ACTION</button>
-        <button class="genre-btn">SUPERHERO</button>
-        <button class="genre-btn">OTHERS ▼</button>
-      </div>
-    </div>
+        <!-- Column 3 -->
+        <div class="footer-col">
+          <h4>ติดตามเราได้ที่</h4>
 
-    <section class="hero-carousel">
-      <button class="carousel-btn prev" id="heroPrev">‹</button>
-      <button class="carousel-btn next" id="heroNext">›</button>
-      <div class="hero-slides" id="heroSlides">
-        <div
-          class="hero-slide active"
-          style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)"
-        >
-          <div class="hero-content">
-            <h1>Discover Amazing Stories</h1>
-            <p>Explore thousands of original comics and webtoons</p>
-            <button class="hero-cta">Start Reading</button>
+          <div class="social-box">
+            <img src="atc black.jpg" alt="ATC Page" />
+            <div>
+              <p>Attawit Commercial</p>
+              <span>ติดตามเพจ</span>
+            </div>
+          </div>
+
+          <div class="social-box">
+            <img src="face.png" alt="PR ATC" />
+            <div>
+              <p>PR ATC - สำนักประชาสัมพันธ์</p>
+              <span>ติดตามเพจ</span>
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-dots" id="heroDots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-    </section>
 
-    <section class="recommended-section">
-      <div class="section-container">
-        <div class="section-header">
-          <h2>RECOMMENDED SERIES</h2>
-          <div class="carousel-dots" id="recDots">
-            <span class="dot"></span>
-            <span class="dot active"></span>
-            <span class="dot"></span>
-          </div>
-        </div>
-        <div class="carousel-wrapper">
-          <button class="carousel-btn prev" id="recPrev">‹</button>
-          <div class="webtoon-carousel" id="webtoonCarousel">
-            <!-- Cards will be loaded by JavaScript -->
-          </div>
-          <button class="carousel-btn next" id="recNext">›</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="weekly-hot">
-      <div class="section-container">
-        <h2 class="section-title">Weekly HOT</h2>
-        <div class="hot-grid" id="hotGrid">
-          <!-- Hot series will be loaded by JavaScript -->
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-content">
-          <p>&copy; 2025 ToonWorld. All rights reserved.</p>
-          <div class="footer-links">
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
-            <a href="about.html">About</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>
+      <div class="footer-bottom">
+        © 2025 วิทยาลัยเทคโนโลยีอรรถวิทย์พณิชยการ | สงวนลิขสิทธิ์
       </div>
     </footer>
+    <script>
+  window.onload = function () {
+    document.getElementById("popup-overlay").style.display = "flex";
+  };
 
-    <script src="script.js"></script>
+  document.getElementById("popup-close").onclick = function () {
+    document.getElementById("popup-overlay").style.display = "none";
+  };
+</script>
+
   </body>
 </html>
